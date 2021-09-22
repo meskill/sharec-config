@@ -1,0 +1,12 @@
+{
+  "name": "@meskill/sharec-config",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "sharec"
+  },
+  "dependencies": {
+    "sharec": "^2.10.2"
+  }
+}
