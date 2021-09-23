@@ -9,6 +9,3 @@
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
-
-# js-ts
-node_modules

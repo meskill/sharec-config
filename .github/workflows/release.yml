@@ -31,6 +31,8 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
+          scope: meskill
       - name: Install
         run: yarn
       - name: Release
@@ -39,6 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         with:
           dry-run: false
+          disable-generate-changelog: true
           release-rules: |
             [
               { "release": "patch", "type": "build" },
@@ -51,4 +54,4 @@ jobs:
       - name: Npm Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+        run: yarn npm publish --access=public
