@@ -41,7 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         with:
           dry-run: false
-          node_module: true
+          node-module: true
           disable-generate-changelog: true
           release-rules: |
             [
