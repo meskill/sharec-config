@@ -1,3 +1,9 @@
+## [1.0.8](https://github.com/meskill/sharec-config/compare/v1.0.7...v1.0.8) (2021-10-16)
+
+### Bug Fixes
+
+- remove intrusive yarn setup ([470c9ca](https://github.com/meskill/sharec-config/commit/470c9ca65a8b6546cfbd28141bd1945afda7eac9))
+
 ## [1.0.7](https://github.com/meskill/sharec-config/compare/v1.0.6...v1.0.7) (2021-10-16)
 
 ### Bug Fixes
