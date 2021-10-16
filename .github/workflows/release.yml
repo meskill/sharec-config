@@ -8,9 +8,9 @@ on:
     branches:
       - master
     paths:
-      - "configs/**"
-      - "yarn.lock"
-      - ".github/workflows/release.yml"
+      - 'configs/**'
+      - 'yarn.lock'
+      - '.github/workflows/release.yml'
 
 jobs:
   publish:
@@ -36,6 +36,7 @@ jobs:
       - name: Install
         run: yarn
       - name: Release
+        id: release
         uses: ridedott/release-me-action@v3
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
@@ -50,9 +51,11 @@ jobs:
               { "release": "patch", "type": "chore" },
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" },
+              { "release": "patch", "type": "style" },
               { "release": false, "subject": "*\\[skip release\\]*" }
             ]
       - name: Npm Publish
+        if: steps.release.outputs.released == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --access=public
