@@ -1,6 +1,6 @@
 singleQuote: true
 printWidth: 120
 overrides:
-  - files: "*.md"
+  - files: '*.md'
     options:
-      parser: "markdown"
+      parser: 'markdown'
