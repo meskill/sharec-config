@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/meskill/sharec-config/compare/v1.0.6...v1.0.7) (2021-10-16)
+
+### Bug Fixes
+
+- json format ([a39dd48](https://github.com/meskill/sharec-config/commit/a39dd480500e6bda1a4b2954658d44d94f44d6a1))
+
 ## [1.0.6](https://github.com/meskill/sharec-config/compare/v1.0.5...v1.0.6) (2021-10-16)
 
 ### Code Style
