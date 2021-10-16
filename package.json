@@ -7,9 +7,10 @@
     "configs"
   ],
   "scripts": {
-    "postinstall": "sharec"
+    "postinstall": "sharec && cd $PROJECT_CWD && yarn config set nmMode hardlinks-global && yarn config set enableGlobalCache true && yarn plugin import typescript && yarn dlx @yarnpkg/sdks vscode"
   },
+  "packageManager": "yarn@3.0.2",
   "dependencies": {
-    "sharec": "^2.10.2"
+    "sharec": "^2.10.7"
   }
 }

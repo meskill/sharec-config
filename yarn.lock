@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@meskill/sharec-config@workspace:."
   dependencies:
-    sharec: ^2.10.2
+    sharec: ^2.10.7
   languageName: unknown
   linkType: soft
 
@@ -71,13 +71,6 @@ __metadata:
     balanced-match: ^1.0.0
     concat-map: 0.0.1
   checksum: faf34a7bb0c3fcf4b59c7808bc5d2a96a40988addf2e7e09dfbb67a2251800e0d14cd2bfc1aa79174f2f5095c54ff27f46fb1289fe2d77dac755b5eb3434cc07
-  languageName: node
-  linkType: hard
-
-"colorette@npm:^1.2.2":
-  version: 1.4.0
-  resolution: "colorette@npm:1.4.0"
-  checksum: 01c3c16058b182a4ab4c126a65a75faa4d38a20fa7c845090b25453acec6c371bb2c5dceb0a2338511f17902b9d1a9af0cadd8509c9403894b79311032c256c3
   languageName: node
   linkType: hard
 
@@ -199,8 +192,8 @@ __metadata:
   linkType: hard
 
 "glob@npm:^7.0.0":
-  version: 7.1.7
-  resolution: "glob@npm:7.1.7"
+  version: 7.2.0
+  resolution: "glob@npm:7.2.0"
   dependencies:
     fs.realpath: ^1.0.0
     inflight: ^1.0.4
@@ -208,7 +201,7 @@ __metadata:
     minimatch: ^3.0.4
     once: ^1.3.0
     path-is-absolute: ^1.0.0
-  checksum: b61f48973bbdcf5159997b0874a2165db572b368b931135832599875919c237fc05c12984e38fe828e69aa8a921eb0e8a4997266211c517c9cfaae8a93988bb8
+  checksum: 78a8ea942331f08ed2e055cb5b9e40fe6f46f579d7fd3d694f3412fe5db23223d29b7fee1575440202e9a7ff9a72ab106a39fee39934c7bedafe5e5f8ae20134
   languageName: node
   linkType: hard
 
@@ -271,11 +264,11 @@ __metadata:
   linkType: hard
 
 "is-core-module@npm:^2.2.0":
-  version: 2.6.0
-  resolution: "is-core-module@npm:2.6.0"
+  version: 2.8.0
+  resolution: "is-core-module@npm:2.8.0"
   dependencies:
     has: ^1.0.3
-  checksum: 183b3b96fed19822b13959876b0317e61fc2cb5ebcbc21639904c81f7ae328af57f8e18cc4750a9c4abebd686130c70d34a89521e57dbe002edfa4614507ce18
+  checksum: f8b52714891e1a6c6577fcb8d5e057bab064a7a30954aab6beb5092e311473eb8da57afd334de4981dc32409ffca998412efc3a2edceb9e397cef6098d21dd91
   languageName: node
   linkType: hard
 
@@ -425,15 +418,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mico-spinner@npm:^1.1.0":
-  version: 1.3.0
-  resolution: "mico-spinner@npm:1.3.0"
-  dependencies:
-    nanocolors: ^0.1.1
-  checksum: 311b002c0ea2563bd0d8f9e7158e3650273186decdc618e365eacee6e5513f1a76551e0da00cb48a21986a9bd82069ebb5027068131ced62dc1f9e5b6b52df8e
-  languageName: node
-  linkType: hard
-
 "minimatch@npm:^3.0.4":
   version: 3.0.4
   resolution: "minimatch@npm:3.0.4"
@@ -450,10 +434,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanocolors@npm:^0.1.1":
-  version: 0.1.6
-  resolution: "nanocolors@npm:0.1.6"
-  checksum: 3e748505531f5b21b98275cc8012efa92394ae1b6132d80e96646c20f0ca46442e82ab4b11ad57edccb8bf40433ade6e16d1ce535bc536bde6c009396467c887
+"nanospinner@npm:^0.3.0":
+  version: 0.3.1
+  resolution: "nanospinner@npm:0.3.1"
+  dependencies:
+    picocolors: ^0.2.0
+  checksum: 4d1057f4c8e0870ae8acb975b0ddf49b6dd0ba2f6e58d01247406ba771baed2f7fe5ba5a08bac3c21fe19dfc8b7a3e3ddff1cd5740585fb490c119dd41706449
   languageName: node
   linkType: hard
 
@@ -486,6 +472,20 @@ __metadata:
   version: 1.0.7
   resolution: "path-parse@npm:1.0.7"
   checksum: 49abf3d81115642938a8700ec580da6e830dde670be21893c62f4e10bd7dd4c3742ddc603fe24f898cba7eb0c6bc1777f8d9ac14185d34540c6d4d80cd9cae8a
+  languageName: node
+  linkType: hard
+
+"picocolors@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "picocolors@npm:0.2.1"
+  checksum: 3b0f441f0062def0c0f39e87b898ae7461c3a16ffc9f974f320b44c799418cabff17780ee647fda42b856a1dc45897e2c62047e1b546d94d6d5c6962f45427b2
+  languageName: node
+  linkType: hard
+
+"picocolors@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "picocolors@npm:1.0.0"
+  checksum: a2e8092dd86c8396bdba9f2b5481032848525b3dc295ce9b57896f931e63fc16f79805144321f72976383fc249584672a75cc18d6777c6b757603f372f745981
   languageName: node
   linkType: hard
 
@@ -569,9 +569,9 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
-"sharec-nanomatch@npm:^2.10.2":
-  version: 2.10.2
-  resolution: "sharec-nanomatch@npm:2.10.2"
+"sharec-nanomatch@npm:^2.10.7":
+  version: 2.10.7
+  resolution: "sharec-nanomatch@npm:2.10.7"
   dependencies:
     arr-diff: ^4.0.0
     array-unique: ^0.3.2
@@ -584,56 +584,57 @@ resolve@^1.1.6:
     snapdragon: ^0.12.0
     snapdragon-capture: ^0.2.0
     to-regex: ^3.0.1
-  checksum: 359b32cf610d00153083067022a0809b0aefa93e9bbbbc15e7795f81aa84a0096e062f564994cc67c1ab43e39a66b0bcdfb4ebc2c4cb2741c72b2e19fd229096
+  checksum: c0ac71f07eabe5dab276c3f964d5ebe357bc235b600e35f5bc7e5ef635442574be6e69ac3538f0a2897ba09463516c3fa9528e0240b114e149dc851e9d1e13dd
   languageName: node
   linkType: hard
 
-"sharec-schema@npm:^2.10.2":
-  version: 2.10.2
-  resolution: "sharec-schema@npm:2.10.2"
+"sharec-schema@npm:^2.10.7":
+  version: 2.10.7
+  resolution: "sharec-schema@npm:2.10.7"
   dependencies:
     js-yaml: ^4.0.0
     json8: ^1.0.3
     lodash: ^4.17.21
-    sharec-utils: ^2.10.2
-  checksum: c6910afac5ee05a2280d14b09f3a788ad018c6c4003f9f511232fec4b14cbac745d48d2837a5c8be02378f7701827914932f6800307708f33076a58e7ae9d0dc
+    sharec-utils: ^2.10.7
+  checksum: 9c3c11c40b4557c2e8fe6689e899ea9d7cef5456b0e4fe953fb70328e59819b655ed36dbb712606f1d5813603a47cde9b4a9b55495637c9e30f0ba5fb13ace13
   languageName: node
   linkType: hard
 
-"sharec-utils@npm:^2.10.2":
-  version: 2.10.2
-  resolution: "sharec-utils@npm:2.10.2"
+"sharec-utils@npm:^2.10.7":
+  version: 2.10.7
+  resolution: "sharec-utils@npm:2.10.7"
   dependencies:
     detect-indent: ^6.0.0
     lodash: ^4.17.21
-    sharec-nanomatch: ^2.10.2
+    minimatch: ^3.0.4
+    sharec-nanomatch: ^2.10.7
     slash: ^3.0.0
-  checksum: 341cf8a440aa1bbef1d04222063299ac14d6e410df94ec55caebf63a3a96c24211e6dfe4bfb51e36b7bcd6479a1ee249194b269bc0f5af8391f795f0084b4ad2
+  checksum: 684fca417e15e85b7b69d923000d84fb5f822cd61868fb8c1e36d3fed1829f95532f6378431772b7f3e8004395db82865a80f49e9065570506a4e6753db5496f
   languageName: node
   linkType: hard
 
-"sharec@npm:^2.10.2":
-  version: 2.10.2
-  resolution: "sharec@npm:2.10.2"
+"sharec@npm:^2.10.7":
+  version: 2.10.7
+  resolution: "sharec@npm:2.10.7"
   dependencies:
-    colorette: ^1.2.2
     detect-indent: ^6.0.0
     editorconfig: ^0.15.3
     enquirer: ^2.3.6
     js-yaml: ">=3.13.1"
     json8: ^1.0.1
     lodash: ^4.17.15
-    mico-spinner: ^1.1.0
     minimatch: ^3.0.4
     minimist: ^1.2.0
-    sharec-nanomatch: ^2.10.2
-    sharec-schema: ^2.10.2
-    sharec-utils: ^2.10.2
+    nanospinner: ^0.3.0
+    picocolors: ^1.0.0
+    sharec-nanomatch: ^2.10.7
+    sharec-schema: ^2.10.7
+    sharec-utils: ^2.10.7
     shelljs: ^0.8.3
     slash: ^3.0.0
   bin:
     sharec: bin/sharec
-  checksum: ce2e04f0ea04fdecb8c270b426b35ac5b4ed9afac50d5eb009979f5a8e3153ca8406ca34f3c1e864885bfae428fe6d8c1e0b904a91c8c8d7819d765f18fdf185
+  checksum: 9a43617290540d9eb81b13f32bd0ec8b67bb795d81008b5ccdd86a04dbe238708a1af61f8c4fc81b409ad83d0d899b102e5ea8a493ee42868b75532ee0502f53
   languageName: node
   linkType: hard
 

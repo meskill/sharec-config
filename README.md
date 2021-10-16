@@ -13,7 +13,5 @@ Template for new projects with configs for common tools. Build by [sharec](https
 
 ## Usage
 
-- `yarn init -y`
-- `yarn add @meskill/sharec-config`
-- `yarn`
-- `yarn dlx @yarnpkg/sdks`
+- `yarn init -i berry`
+- `yarn add --dev @meskill/sharec-config`
