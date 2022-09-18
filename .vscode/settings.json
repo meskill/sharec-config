@@ -10,5 +10,8 @@
     "**/.pnp.*": true
   },
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
-  "eslint.nodePath": ".yarn/sdks"
+  "eslint.nodePath": ".yarn/sdks",
+  "conventionalCommits.scopes": [
+    "eslint"
+  ]
 }
